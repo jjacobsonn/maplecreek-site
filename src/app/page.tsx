@@ -6,7 +6,7 @@ export default function Home() {
     <section className="w-full">
       <div className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh] xl:h-[92vh]">
         <Image
-          src="/images/img-3.jpg"
+          src="/images/img-4.jpg"
           alt="Hero image"
           fill
           priority
