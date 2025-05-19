@@ -3,9 +3,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="bg-white shadow-md">
@@ -28,19 +30,40 @@ const Navigation = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/about" className="font-montserrat text-lg text-gray-700 hover:text-red-700 hover:underline hover:scale-105 transition-all duration-150 font-bold">
+            <Link
+              href="/"
+              className={`font-montserrat text-lg font-bold transition-all duration-150 px-2 py-1 rounded text-gray-700 hover:text-red-700 hover:underline hover:scale-105 ${pathname === '/' ? 'text-red-700' : ''}`}
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className={`font-montserrat text-lg font-bold transition-all duration-150 px-2 py-1 rounded text-gray-700 hover:text-red-700 hover:underline hover:scale-105 ${pathname === '/about' ? 'text-red-700' : ''}`}
+            >
               About
             </Link>
-            <Link href="/services" className="font-montserrat text-lg text-gray-700 hover:text-red-700 hover:underline hover:scale-105 transition-all duration-150 font-bold">
+            <Link
+              href="/services"
+              className={`font-montserrat text-lg font-bold transition-all duration-150 px-2 py-1 rounded text-gray-700 hover:text-red-700 hover:underline hover:scale-105 ${pathname === '/services' ? 'text-red-700' : ''}`}
+            >
               Services
             </Link>
-            <Link href="/careers" className="font-montserrat text-lg text-gray-700 hover:text-red-700 hover:underline hover:scale-105 transition-all duration-150 font-bold">
+            <Link
+              href="/careers"
+              className={`font-montserrat text-lg font-bold transition-all duration-150 px-2 py-1 rounded text-gray-700 hover:text-red-700 hover:underline hover:scale-105 ${pathname === '/careers' ? 'text-red-700' : ''}`}
+            >
               Careers
             </Link>
-            <Link href="/resources" className="font-montserrat text-lg text-gray-700 hover:text-red-700 hover:underline hover:scale-105 transition-all duration-150 font-bold">
+            <Link
+              href="/resources"
+              className={`font-montserrat text-lg font-bold transition-all duration-150 px-2 py-1 rounded text-gray-700 hover:text-red-700 hover:underline hover:scale-105 ${pathname === '/resources' ? 'text-red-700' : ''}`}
+            >
               Resources
             </Link>
-            <Link href="/contact" className="font-montserrat text-lg text-gray-700 hover:text-red-700 hover:underline hover:scale-105 transition-all duration-150 font-bold">
+            <Link
+              href="/contact"
+              className={`font-montserrat text-lg font-bold transition-all duration-150 px-2 py-1 rounded text-gray-700 hover:text-red-700 hover:underline hover:scale-105 ${pathname === '/contact' ? 'text-red-700' : ''}`}
+            >
               Contact
             </Link>
           </div>
@@ -78,19 +101,40 @@ const Navigation = () => {
       {/* Mobile menu */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <Link href="/about" className="block px-3 py-2 font-montserrat text-gray-700 hover:text-blue-900 hover:bg-gray-100 font-medium">
+          <Link
+            href="/"
+            className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/' ? 'text-red-700' : ''}`}
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/about' ? 'text-red-700' : ''}`}
+          >
             About
           </Link>
-          <Link href="/services" className="block px-3 py-2 font-montserrat text-gray-700 hover:text-blue-900 hover:bg-gray-100 font-medium">
+          <Link
+            href="/services"
+            className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/services' ? 'text-red-700' : ''}`}
+          >
             Services
           </Link>
-          <Link href="/careers" className="block px-3 py-2 font-montserrat text-gray-700 hover:text-blue-900 hover:bg-gray-100 font-medium">
+          <Link
+            href="/careers"
+            className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/careers' ? 'text-red-700' : ''}`}
+          >
             Careers
           </Link>
-          <Link href="/resources" className="block px-3 py-2 font-montserrat text-gray-700 hover:text-blue-900 hover:bg-gray-100 font-medium">
+          <Link
+            href="/resources"
+            className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/resources' ? 'text-red-700' : ''}`}
+          >
             Resources
           </Link>
-          <Link href="/contact" className="block px-3 py-2 font-montserrat text-gray-700 hover:text-blue-900 hover:bg-gray-100 font-medium">
+          <Link
+            href="/contact"
+            className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/contact' ? 'text-red-700' : ''}`}
+          >
             Contact
           </Link>
         </div>
