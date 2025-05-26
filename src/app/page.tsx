@@ -91,11 +91,11 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-start justify-items-center">
             {[
-              { src: "/images/icon-2.png", alt: "Skilled Nursing", title: "Skilled Nursing Services" },
+              { src: "/images/icon-2.png", alt: "Skilled Nursing", title: "Skilled Nursing" },
               { src: "/images/icon-3.png", alt: "Physician Oversight", title: "Physician Oversight" },
-              { src: "/images/icon-4.png", alt: "Home Health Aides", title: "Home Health Aides" },
-              { src: "/images/icon-5.png", alt: "Emotional & Spiritual Support", title: "Emotional & Spiritual Support" },
-              { src: "/images/icon-6.png", alt: "Bereavement & Family Support", title: "Bereavement & Family Support" },
+              { src: "/images/icon-4.png", alt: "Home Care Assistance", title: "Home Care Assistance" },
+              { src: "/images/icon-5.png", alt: "Spiritual & Emotional Care", title: "Spiritual & Emotional Care" },
+              { src: "/images/icon-6.png", alt: "Family & Grief Support", title: "Family & Grief Support", centerMobile: true },
             ].map((item, idx) => (
               <motion.div
                 key={item.title}
@@ -103,7 +103,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.4 }}
                 transition={{ duration: 0.5, delay: idx * 0.12, ease: "easeOut" }}
-                className="flex flex-col items-center text-center group"
+                className={`flex flex-col items-center text-center group${item.centerMobile ? ' col-span-2 md:col-span-1' : ''}`}
               >
                 <div className="flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-sm mb-4 transition-all duration-200 group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(0,0,0,0.05)]">
                   <Image src={item.src} alt={item.alt} width={44} height={44} className="object-contain" />
