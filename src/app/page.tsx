@@ -83,38 +83,36 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="w-full bg-[#f9fafb] py-16">
+      <section className="w-full bg-[#f3f4f6] pt-20 pb-16">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 text-center font-montserrat">Our Services</h2>
           <p className="text-gray-700 text-lg mb-12 max-w-3xl mx-auto text-center font-montserrat">
             Maple Creek offers a full spectrum of in-home health and hospice services, designed to support patients and their families with skilled care, comfort, and compassion. Our team works closely with you to ensure every need is met—physically, emotionally, and spiritually—throughout your care journey.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-start justify-items-center">
-            {/* Skilled Nursing Services */}
-            <div className="flex flex-col items-center text-center transition-transform duration-200 hover:scale-105">
-              <Image src="/images/icon-2.png" alt="Skilled Nursing" width={60} height={60} className="mb-4" />
-              <h3 className="font-bold text-base md:text-lg text-gray-900 font-montserrat">Skilled Nursing Services</h3>
-            </div>
-            {/* Physician Oversight */}
-            <div className="flex flex-col items-center text-center transition-transform duration-200 hover:scale-105">
-              <Image src="/images/icon-3.png" alt="Physician Oversight" width={60} height={60} className="mb-4" />
-              <h3 className="font-bold text-base md:text-lg text-gray-900 font-montserrat">Physician Oversight</h3>
-            </div>
-            {/* Home Health Aides */}
-            <div className="flex flex-col items-center text-center transition-transform duration-200 hover:scale-105">
-              <Image src="/images/icon-4.png" alt="Home Health Aides" width={60} height={60} className="mb-4" />
-              <h3 className="font-bold text-base md:text-lg text-gray-900 font-montserrat">Home Health Aides</h3>
-            </div>
-            {/* Emotional & Spiritual Support */}
-            <div className="flex flex-col items-center text-center transition-transform duration-200 hover:scale-105">
-              <Image src="/images/icon-5.png" alt="Emotional & Spiritual Support" width={60} height={60} className="mb-4" />
-              <h3 className="font-bold text-base md:text-lg text-gray-900 font-montserrat">Emotional & Spiritual Support</h3>
-            </div>
-            {/* Bereavement & Family Support */}
-            <div className="flex flex-col items-center text-center transition-transform duration-200 hover:scale-105">
-              <Image src="/images/icon-6.png" alt="Bereavement & Family Support" width={60} height={60} className="mb-4" />
-              <h3 className="font-bold text-base md:text-lg text-gray-900 font-montserrat">Bereavement & Family Support</h3>
-            </div>
+            {[
+              { src: "/images/icon-2.png", alt: "Skilled Nursing", title: "Skilled Nursing Services" },
+              { src: "/images/icon-3.png", alt: "Physician Oversight", title: "Physician Oversight" },
+              { src: "/images/icon-4.png", alt: "Home Health Aides", title: "Home Health Aides" },
+              { src: "/images/icon-5.png", alt: "Emotional & Spiritual Support", title: "Emotional & Spiritual Support" },
+              { src: "/images/icon-6.png", alt: "Bereavement & Family Support", title: "Bereavement & Family Support" },
+            ].map((item, idx) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.5, delay: idx * 0.12, ease: "easeOut" }}
+                className="flex flex-col items-center text-center group"
+              >
+                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-sm mb-4 transition-all duration-200 group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(0,0,0,0.05)]">
+                  <Image src={item.src} alt={item.alt} width={44} height={44} className="object-contain" />
+                </div>
+                <h3 className="font-bold text-base md:text-lg text-gray-900 font-montserrat">
+                  {item.title}
+                </h3>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
