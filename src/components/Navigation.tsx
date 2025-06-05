@@ -13,7 +13,7 @@ const Navigation = () => {
     <>
       {/* Top red bar with phone info */}
       <div className="fixed top-0 left-0 w-full z-50 bg-red-700 py-2 flex justify-center items-center">
-        <span className="text-white text-lg font-extrabold flex items-center gap-2">
+        <span className="text-white text-lg font-extrabold flex items-center gap-2 font-montserrat">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5" fill="white">
             <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.25a1 1 0 01-1 1C10.07 22 2 13.93 2 4.75a1 1 0 011-1H6.25a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" />
           </svg>
@@ -25,15 +25,14 @@ const Navigation = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-28">
             {/* Logo section */}
-            <div className="flex-shrink-0 flex items-center h-full px-0">
-              <Link href="/" className="flex items-center h-full">
+            <div className="flex-shrink-0 flex items-center px-0">
+              <Link href="/" className="flex items-center">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo-1.png"
                   alt="Maple Creek Home Health & Hospice"
-                  width={300}
-                  height={80}
-                  style={{ objectFit: 'contain' }}
-                  className="self-center h-full"
+                  width={400}
+                  height={110}
+                  className="self-center max-h-24 object-contain"
                   priority
                 />
               </Link>
