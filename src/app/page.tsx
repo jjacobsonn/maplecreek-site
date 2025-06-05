@@ -26,10 +26,10 @@ export default function Home() {
               Empowering Families Through Every Chapter of Care
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
-              <Link href="/about" className="bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-8 rounded shadow-lg text-lg transition-all duration-150">
+              <Link href="/about" className="bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-8 rounded shadow-lg text-lg transition-all duration-150 hero-btn">
                 Learn More
               </Link>
-              <Link href="/contact" className="bg-white hover:bg-gray-100 text-red-700 font-bold py-3 px-8 rounded shadow-lg text-lg transition-all duration-150 border-2 border-red-700">
+              <Link href="/contact" className="bg-white hover:bg-gray-100 text-red-700 font-bold py-3 px-8 rounded shadow-lg text-lg transition-all duration-150 border-2 border-red-700 hero-btn">
                 Contact Us
               </Link>
             </div>
@@ -116,6 +116,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <style jsx global>{`
+        .hero-btn {
+          transition: all 0.25s ease-in-out;
+        }
+        .hero-btn:hover, .hero-btn:focus-visible {
+          transform: scale(1.05);
+          filter: brightness(1.1);
+        }
+      `}</style>
     </>
   );
 }
