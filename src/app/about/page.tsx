@@ -57,6 +57,20 @@ export default function AboutPage() {
       {/* Who We Are Section */}
       <section className="w-full font-montserrat bg-white py-20">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+          {/* Desktop: Content on the right */}
+          <div className="hidden md:flex flex-col justify-center items-start text-left w-full">
+            <h2 className="text-4xl font-extrabold mb-6 text-gray-900">Who We Are</h2>
+            <p className="text-gray-700 text-lg mb-8">
+              At Maple Creek Home Health &amp; Hospice, we&apos;re committed to providing compassionate, high-quality care for individuals of all ages and stages of life. Our mission is to help you live as comfortably and fully as possible in the place you call home. Whether you&apos;re recovering from illness or navigating hospice care, we&apos;re here to walk with you—offering support, guidance, and respect every step of the way. We understand how important family is during times of change, and we treat your loved ones with the same care and dignity we&apos;d give our own.
+            </p>
+            <button className="bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-3 px-6 rounded text-lg shadow transition-all duration-200">
+              Get In Touch With Us
+            </button>
+          </div>
+          {/* Mobile: Content above Carousel */}
+          <div className="flex flex-col md:hidden">
+            <h2 className="text-3xl font-extrabold mb-3 text-gray-900 text-center">Who We Are</h2>
+          </div>
           {/* Left: Carousel */}
           <div className="flex flex-col items-center w-full">
             <div
@@ -108,7 +122,7 @@ export default function AboutPage() {
               </button>
             </div>
             {/* Dots below image */}
-            <div className="flex justify-center w-full gap-2 mt-4">
+            <div className="flex justify-center w-full gap-2 mt-2">
               {carouselImages.map((_, idx) => (
                 <button
                   key={idx}
@@ -119,15 +133,11 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-          {/* Right: Content */}
-          <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left w-full">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-gray-900">Who We Are</h2>
+          {/* Mobile: Paragraph below Carousel */}
+          <div className="flex flex-col md:hidden mt-8">
             <p className="text-gray-700 text-lg mb-8">
               At Maple Creek Home Health &amp; Hospice, we&apos;re committed to providing compassionate, high-quality care for individuals of all ages and stages of life. Our mission is to help you live as comfortably and fully as possible in the place you call home. Whether you&apos;re recovering from illness or navigating hospice care, we&apos;re here to walk with you—offering support, guidance, and respect every step of the way. We understand how important family is during times of change, and we treat your loved ones with the same care and dignity we&apos;d give our own.
             </p>
-            <button className="bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-3 px-6 rounded text-lg shadow transition-all duration-200">
-              Get In Touch With Us
-            </button>
           </div>
         </div>
       </section>
