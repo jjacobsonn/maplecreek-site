@@ -60,7 +60,7 @@ export default function AboutPage() {
           {/* Left: Carousel */}
           <div className="flex flex-col items-center w-full">
             <div
-              className="relative w-full max-w-[400px] h-[300px] sm:h-[400px] md:h-[500px] aspect-[3/4] overflow-hidden mx-auto"
+              className="relative w-full max-w-[400px] h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden mx-auto rounded-xl"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
@@ -77,7 +77,7 @@ export default function AboutPage() {
                   <Image
                     src={carouselImages[current]}
                     alt={`Gallery image ${current + 1}`}
-                    className="object-cover w-full h-full select-none rounded-xl"
+                    className="object-contain w-full h-full select-none rounded-xl"
                     width={667}
                     height={500}
                     priority={current === 0}
