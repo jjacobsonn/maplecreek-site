@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import type { MutableRefObject } from "react";
 
 export default function AboutPage() {
   // Carousel state
@@ -15,16 +16,29 @@ export default function AboutPage() {
     "/images/carousel/c-img-7.jpg",
   ];
   const [current, setCurrent] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const intervalRef: MutableRefObject<NodeJS.Timeout | null> = useRef<NodeJS.Timeout | null>(null);
 
   const prevImage = () => setCurrent((prev) => (prev === 0 ? carouselImages.length - 1 : prev - 1));
   const nextImage = () => setCurrent((prev) => (prev === carouselImages.length - 1 ? 0 : prev + 1));
 
+  // Auto-swipe effect
+  useEffect(() => {
+    if (isHovered) return;
+    intervalRef.current = setInterval(() => {
+      setCurrent((prev) => (prev === carouselImages.length - 1 ? 0 : prev + 1));
+    }, 5000);
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, [isHovered, carouselImages.length]);
+
   return (
     <>
       <section className="w-full">
-        <div className="relative w-full h-[40vh] md:h-[50vh] lg:h-[60vh] xl:h-[70vh]">
+        <div className="relative w-full h-[28vh] md:h-[36vh] lg:h-[44vh] xl:h-[52vh]">
           <Image
-            src="/images/img-7.jpg"
+            src="/images/img-10.jpg"
             alt="About Us Banner"
             fill
             priority
@@ -45,7 +59,11 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           {/* Left: Carousel */}
           <div className="flex flex-col items-center w-full">
-            <div className="relative w-full max-w-[480px] mx-auto">
+            <div
+              className="relative w-full max-w-[400px] h-[300px] sm:h-[400px] md:h-[500px] aspect-[3/4] overflow-hidden mx-auto"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
               <AnimatePresence initial={false} mode="wait">
                 <motion.div
                   key={current}
@@ -54,13 +72,14 @@ export default function AboutPage() {
                   exit={{ opacity: 0, x: -40 }}
                   transition={{ duration: 0.35, ease: "easeInOut" }}
                   className="w-full"
+                  style={{ willChange: 'transform' }}
                 >
                   <Image
                     src={carouselImages[current]}
                     alt={`Gallery image ${current + 1}`}
-                    className="object-contain w-full h-auto select-none rounded-xl"
-                    width={800}
-                    height={600}
+                    className="object-cover w-full h-full select-none rounded-xl"
+                    width={667}
+                    height={500}
                     priority={current === 0}
                   />
                 </motion.div>
