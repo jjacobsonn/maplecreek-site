@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { MutableRefObject } from "react";
+import AnimatedStats from "../../components/AnimatedStats";
 
 export default function AboutPage() {
   // Carousel state
@@ -141,6 +142,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      {/* Animated Stats Section */}
+      <AnimatedStats />
     </>
   );
 } 
