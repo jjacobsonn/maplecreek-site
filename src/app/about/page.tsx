@@ -485,7 +485,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center p-6">
               <div className="mb-5">
                 <Image 
-                  src="/images/icon-16.png" 
+                  src="/images/icon-18.png" 
                   alt="Accountability Icon" 
                   width={56} 
                   height={56} 
