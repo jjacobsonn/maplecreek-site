@@ -288,6 +288,84 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      
+      {/* Services Section */}
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
+              <svg className="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+              Services
+            </div>
+            <h2 className="text-4xl font-extrabold mb-3 text-gray-900 font-montserrat">Our In-Home Services</h2>
+            <p className="text-lg text-gray-700 font-montserrat max-w-3xl mx-auto">
+              Learn about our professional and compassionate in-home services.
+            </p>
+          </div>
+          
+          {/* Service Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Home Health Card */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-gray-100">
+              <div className="p-8 flex flex-col md:flex-row items-start gap-6">
+                <div className="flex-shrink-0">
+                  <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-[oklch(0.505_0.213_27.518)]">
+                    <Image 
+                      src="/images/img-6.jpg"
+                      alt="Home Health"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold mb-2 text-gray-900 font-montserrat">Home Health</h3>
+                  <p className="text-gray-700 font-montserrat">
+                    Home health focuses on recovery and rehabilitation. Home health care refers to a wide range of medical and non-medical services provided at a patient&apos;s home to help them recover from an illness, surgery, or manage chronic conditions. Our skilled nurses and therapists work together to create personalized care plans that promote independence and improve quality of life.
+                  </p>
+                  <button className="mt-5 bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-2 px-5 rounded text-sm shadow transition-all duration-200 flex items-center">
+                    LEARN MORE
+                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            {/* Hospice Care Card */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-gray-100">
+              <div className="p-8 flex flex-col md:flex-row items-start gap-6">
+                <div className="flex-shrink-0">
+                  <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-[oklch(0.505_0.213_27.518)]">
+                    <Image 
+                      src="/images/img-2.jpg"
+                      alt="Hospice Care"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold mb-2 text-gray-900 font-montserrat">Hospice Care</h3>
+                  <p className="text-gray-700 font-montserrat">
+                    Hospice care, when administered at the optimal juncture, offers patients the invaluable gift of time. It affords them the opportunity to come to terms with their diagnosis, relish moments of nostalgia, bid their farewells, and put their affairs in order. Our compassionate team provides comfort, pain management, and emotional support during life&apos;s final journey.
+                  </p>
+                  <button className="mt-5 bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-2 px-5 rounded text-sm shadow transition-all duration-200 flex items-center">
+                    LEARN MORE
+                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 } 
