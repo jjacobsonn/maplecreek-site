@@ -158,6 +158,33 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      {/* Mission Section */}
+      <section className="w-full bg-[oklch(0.505_0.213_27.518)] py-16 text-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-10">
+            <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat border border-white">
+              <svg className="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" strokeWidth="2"></circle>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"></path>
+              </svg>
+              <span className="font-bold">Mission</span>
+            </div>
+            
+            <h2 className="text-4xl font-extrabold mb-6 text-white font-montserrat">
+              Providing Life-Changing Service To<br />Patients and Their Families
+            </h2>
+            
+            <p className="text-lg text-white/90 font-montserrat max-w-4xl mx-auto leading-relaxed">
+              We are <span className="font-bold text-white">passionate about serving</span> those that are seeking recovery through our in-home services or 
+              are nearing the end of life and receiving care from our Hospice professionals.
+              <span className="font-bold text-white"> Maple Creek Home Health & Hospice</span> adheres to being guided by the goals of the patient.
+              Furthermore, embracing patient self-determination, autonomy, and choice
+                      is at the core of everything we do.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
