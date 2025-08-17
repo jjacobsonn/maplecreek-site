@@ -309,7 +309,7 @@ export default function AboutPage() {
           {/* Service Cards */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Home Health Card */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-gray-100 hover:border-[oklch(0.505_0.213_27.518)] hover:border-2">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border-2 border-gray-100 hover:border-[oklch(0.505_0.213_27.518)]">
               <div className="p-8 flex flex-col md:flex-row items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-[oklch(0.505_0.213_27.518)]">
@@ -323,7 +323,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-2xl font-bold mb-2 text-gray-900 font-montserrat">Home Health</h3>
-                  <p className="text-gray-700 font-montserrat">
+                  <p className="text-gray-700 font-montserrat min-h-[160px]">
                     Home health focuses on recovery and rehabilitation. Home health care refers to a wide range of medical and non-medical services provided at a patient&apos;s home to help them recover from an illness, surgery, or manage chronic conditions. Our skilled nurses and therapists work together to create personalized care plans that promote independence and improve quality of life.
                   </p>
                   <button className="mt-5 bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-2 px-5 rounded text-sm shadow transition-all duration-200 flex items-center">
@@ -337,7 +337,7 @@ export default function AboutPage() {
             </div>
             
             {/* Hospice Care Card */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-gray-100 hover:border-[oklch(0.505_0.213_27.518)] hover:border-2">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border-2 border-gray-100 hover:border-[oklch(0.505_0.213_27.518)]">
               <div className="p-8 flex flex-col md:flex-row items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-[oklch(0.505_0.213_27.518)]">
@@ -351,7 +351,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-2xl font-bold mb-2 text-gray-900 font-montserrat">Hospice Care</h3>
-                  <p className="text-gray-700 font-montserrat">
+                  <p className="text-gray-700 font-montserrat min-h-[160px]">
                     Hospice care, when administered at the optimal juncture, offers patients the invaluable gift of time. It affords them the opportunity to come to terms with their diagnosis, relish moments of nostalgia, bid their farewells, and put their affairs in order. Our compassionate team provides comfort, pain management, and emotional support during life&apos;s final journey.
                   </p>
                   <button className="mt-5 bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-2 px-5 rounded text-sm shadow transition-all duration-200 flex items-center">
