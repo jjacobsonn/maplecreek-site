@@ -309,7 +309,7 @@ export default function AboutPage() {
           {/* Service Cards */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Home Health Card */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-gray-100">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-gray-100 hover:border-[oklch(0.505_0.213_27.518)] hover:border-2">
               <div className="p-8 flex flex-col md:flex-row items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-[oklch(0.505_0.213_27.518)]">
@@ -337,7 +337,7 @@ export default function AboutPage() {
             </div>
             
             {/* Hospice Care Card */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-gray-100">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-gray-100 hover:border-[oklch(0.505_0.213_27.518)] hover:border-2">
               <div className="p-8 flex flex-col md:flex-row items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-[oklch(0.505_0.213_27.518)]">
