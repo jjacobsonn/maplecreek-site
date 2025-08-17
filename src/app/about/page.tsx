@@ -420,6 +420,132 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      
+      {/* Values Section */}
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          {/* Section Header */}
+          <div className="text-center mb-10">
+            <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
+              <svg className="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <span className="font-bold">Values</span>
+            </div>
+            <h2 className="text-4xl font-extrabold mb-3 text-gray-900 font-montserrat">Committed to Excellence</h2>
+            <p className="text-lg text-gray-700 font-montserrat max-w-3xl mx-auto mb-12">
+              Our core values of compassionate care, accountability, love one another, intelligent risk taking, celebration, and ownership guide us in our decision-making and inspire us to be better people, in and out of work.
+            </p>
+          </div>
+          
+          {/* Values Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-8">
+            {/* Compassionate Care */}
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="mb-5">
+                <Image 
+                  src="/images/icon-12.png" 
+                  alt="Compassionate Care Icon" 
+                  width={56} 
+                  height={56} 
+                  className="w-14 h-14" 
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 font-montserrat mb-2">Compassionate Care</h3>
+              <p className="text-gray-700 font-montserrat">
+                We see each client as a whole person, providing attentive and thoughtful care that honors their dignity.
+              </p>
+            </div>
+            
+            {/* Accountability */}
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="mb-5">
+                <Image 
+                  src="/images/icon-16.png" 
+                  alt="Accountability Icon" 
+                  width={56} 
+                  height={56} 
+                  className="w-14 h-14" 
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 font-montserrat mb-2">Accountability</h3>
+              <p className="text-gray-700 font-montserrat">
+                We hold ourselves to the highest standards of care and professionalism.
+              </p>
+            </div>
+            
+
+            
+            {/* Love One Another */}
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="mb-5">
+                <Image 
+                  src="/images/icon-9.png" 
+                  alt="Love One Another Icon" 
+                  width={56} 
+                  height={56} 
+                  className="w-14 h-14" 
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 font-montserrat mb-2">Love One Another</h3>
+              <p className="text-gray-700 font-montserrat">
+                We strive to treat each other as people whose interest matter as much as our own.
+              </p>
+            </div>
+            
+            {/* Intelligent Risk Taking */}
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="mb-5">
+                <Image 
+                  src="/images/icon-15.png" 
+                  alt="Intelligent Risk Taking Icon" 
+                  width={56} 
+                  height={56} 
+                  className="w-14 h-14" 
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 font-montserrat mb-2">Intelligent Risk Taking</h3>
+              <p className="text-gray-700 font-montserrat">
+                We trust your judgment. Be innovative. Be entrepreneurial.
+              </p>
+            </div>
+            
+            {/* Celebration */}
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="mb-5">
+                <Image 
+                  src="/images/icon-13.png" 
+                  alt="Celebration Icon" 
+                  width={56} 
+                  height={56} 
+                  className="w-14 h-14" 
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 font-montserrat mb-2">Celebration</h3>
+              <p className="text-gray-700 font-montserrat">
+                We love to celebrate successes and make work fun.
+              </p>
+            </div>
+            
+            {/* Ownership */}
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="mb-5">
+                <Image 
+                  src="/images/icon-17.png" 
+                  alt="Ownership Icon" 
+                  width={56} 
+                  height={56} 
+                  className="w-14 h-14" 
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 font-montserrat mb-2">Ownership</h3>
+              <p className="text-gray-700 font-montserrat">
+                We reward and support our employees who treat this company as if they owned it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 } 
