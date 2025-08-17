@@ -309,7 +309,18 @@ export default function AboutPage() {
           {/* Service Cards */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Home Health Card */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border-2 border-gray-100 hover:border-[oklch(0.505_0.213_27.518)]">
+            <motion.div 
+              className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border-2 border-gray-100 hover:border-[oklch(0.505_0.213_27.518)]"
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+              transition={{ 
+                duration: 0.8,
+                ease: "linear",
+                opacity: { duration: 0.8, ease: "linear" },
+                y: { duration: 0.8, ease: "linear" }
+              }}
+            >
               <div className="p-8 flex flex-col md:flex-row items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-[oklch(0.505_0.213_27.518)]">
@@ -334,10 +345,23 @@ export default function AboutPage() {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
             
             {/* Hospice Care Card */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border-2 border-gray-100 hover:border-[oklch(0.505_0.213_27.518)]">
+            <motion.div 
+              className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border-2 border-gray-100 hover:border-[oklch(0.505_0.213_27.518)]"
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+              transition={{ 
+                duration: 0.8, 
+                ease: "linear",
+                opacity: { duration: 0.8, ease: "linear" },
+                y: { duration: 0.8, ease: "linear" },
+                delay: 0.15
+              }}
+                  
+            >
               <div className="p-8 flex flex-col md:flex-row items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-[oklch(0.505_0.213_27.518)]">
@@ -362,7 +386,7 @@ export default function AboutPage() {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
