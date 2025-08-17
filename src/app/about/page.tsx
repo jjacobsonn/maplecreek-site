@@ -124,7 +124,7 @@ export default function AboutPage() {
             <p className="text-gray-700 text-lg mb-8">
               At Maple Creek Home Health &amp; Hospice, we&apos;re committed to providing compassionate, high-quality care for individuals of all ages and stages of life. Our mission is to help you live as comfortably and fully as possible in the place you call home. Whether you&apos;re recovering from illness or navigating hospice care, we&apos;re here to walk with you—offering support, guidance, and respect every step of the way. We understand how important family is during times of change, and we treat your loved ones with the same care and dignity we&apos;d give our own.
             </p>
-            <button className="bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-3 px-6 rounded text-lg shadow transition-all duration-200">
+            <button className="bg-[oklch(0.505_0.213_27.518)] hover:brightness-125 text-white font-bold py-3 px-6 rounded text-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2 transform-gpu">
               Get In Touch With Us
             </button>
           </div>
@@ -215,7 +215,7 @@ export default function AboutPage() {
               <p className="text-lg md:text-base text-gray-700 font-montserrat mb-4 md:mb-2">We strive to provide superior home health and hospice services in Utah County. See how we&apos;ve impacted our many patients through professional and compassionate care.</p>
             </div>
             <button
-              className="mt-2 lg:mt-0 inline-block bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold font-montserrat py-3 px-7 rounded-lg shadow transition-all duration-200 text-lg self-start"
+              className="mt-2 lg:mt-0 inline-block bg-[oklch(0.505_0.213_27.518)] hover:brightness-125 text-white font-bold font-montserrat py-3 px-7 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2 transform-gpu text-lg self-start"
               type="button"
               aria-label="Share your experience"
             >
@@ -409,7 +409,7 @@ export default function AboutPage() {
               
               <a 
                 href="tel:8017985333" 
-                className="bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-3 px-6 rounded text-lg shadow transition-all duration-200 font-montserrat flex items-center gap-2"
+                className="bg-[oklch(0.505_0.213_27.518)] hover:brightness-125 text-white font-bold py-3 px-6 rounded text-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2 transform-gpu font-montserrat flex items-center gap-2"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
