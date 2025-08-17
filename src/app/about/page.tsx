@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { MutableRefObject } from "react";
 import AnimatedStats from "../../components/AnimatedStats";
@@ -33,6 +33,66 @@ export default function AboutPage() {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
   }, [isHovered, carouselImages.length]);
+
+  // Testimonials data
+  const testimonials = [
+    {
+      text: `"I was reluctant to place my husband on Hospice, but it was the best decision I could have made. Maple Creek was wonderful. Someone was with us each day to take care of my husband and also checking on my wellbeing through the process. The entire team was quick to respond when needed and immediately communicated any changes in my husband's care."`,
+      name: 'Sharon Rogers',
+      source: ''
+    },
+    {
+      text: `"My 89 year old mother only spent about 45 days in hospice care after declining from hip surgery. The support from Maple Creek was beyond anything I expected. It was as if they cared about my mother and my family as if it were their own. I am extremely grateful for all the services they provided to help me process things."`,
+      name: 'Andrew Tweedie',
+      source: 'Google Review'
+    },
+    {
+      text: `"The care team at Maple Creek was exceptional. They treated my father with dignity and compassion during his final days. Their support extended to our entire family, guiding us through a difficult time with professionalism and empathy."`,
+      name: 'Michael Thompson',
+      source: ''
+    },
+    {
+      text: `"When my wife needed hospice care, Maple Creek made a challenging situation more bearable. Their staff was responsive, knowledgeable, and genuinely caring. They were available 24/7 and addressed all our concerns promptly."`,
+      name: 'Robert Johnson',
+      source: 'Facebook Review'
+    },
+    {
+      text: `"I can't express enough gratitude for the Maple Creek team. Their home health services helped my mother regain independence after her stroke. The therapists and nurses developed a personalized care plan that made a tremendous difference."`,
+      name: 'Patricia Williams',
+      source: ''
+    },
+    {
+      text: `"Choosing Maple Creek for my grandfather's hospice care was one of the best decisions we made. They provided comfort, dignity, and support during his final journey. Their team became like family to us during this difficult time."`,
+      name: 'Jennifer Martinez',
+      source: 'Google Review'
+    },
+  ];
+  
+  // Testimonial carousel state
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [isTestimonialHovered, setIsTestimonialHovered] = useState(false);
+  const testimonialIntervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Function to show next testimonial group - using useCallback to prevent dependency issues
+  const nextTestimonialGroup = useCallback(() => {
+    setCurrentTestimonial((prev) => (prev >= testimonials.length - 2 ? 0 : prev + 2));
+  }, [testimonials.length]);
+
+  // Function to show specific testimonial group
+  const goToTestimonialGroup = useCallback((index: number) => {
+    setCurrentTestimonial(index * 2);
+  }, []);
+
+  // Auto-swipe effect for testimonials - changes every 3 seconds
+  useEffect(() => {
+    if (isTestimonialHovered) return;
+    testimonialIntervalRef.current = setInterval(() => {
+      nextTestimonialGroup();
+    }, 3000); // Exactly 3 seconds as requested
+    return () => {
+      if (testimonialIntervalRef.current) clearInterval(testimonialIntervalRef.current);
+    };
+  }, [isTestimonialHovered, nextTestimonialGroup]);
 
   return (
     <>
@@ -144,6 +204,90 @@ export default function AboutPage() {
       </section>
       {/* Animated Stats Section */}
       <AnimatedStats />
+
+      {/* Testimonials Section */}
+      <section className="w-full bg-[#f4f4f4] py-16">
+        <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[minmax(0,420px)_1fr] gap-10 items-stretch">
+          {/* Left: Heading and Intro */}
+          <div className="w-full mb-8 lg:mb-0 flex flex-col justify-between h-full lg:pr-8">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 font-montserrat mb-4 md:mb-2">What Our Community Says About Maple Creek Home Health & Hospice</h2>
+              <p className="text-lg md:text-base text-gray-700 font-montserrat mb-4 md:mb-2">We strive to provide superior home health and hospice services in Utah County. See how we&apos;ve impacted our many patients through professional and compassionate care.</p>
+            </div>
+            <button
+              className="mt-2 lg:mt-0 inline-block bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold font-montserrat py-3 px-7 rounded-lg shadow transition-all duration-200 text-lg self-start"
+              type="button"
+              aria-label="Share your experience"
+            >
+              Share Your Experience
+            </button>
+          </div>
+          
+          {/* Right: Testimonial Carousel */}
+          <div 
+            className="w-full"
+            onMouseEnter={() => setIsTestimonialHovered(true)}
+            onMouseLeave={() => setIsTestimonialHovered(false)}
+          >
+            <div className="relative">
+              {/* Testimonial cards container */}
+              <div className="overflow-hidden">
+                <AnimatePresence initial={false} mode="wait">
+                  <motion.div
+                    key={currentTestimonial}
+                    initial={{ opacity: 0, x: 40 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -40 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
+                  >
+                    {/* Display current pair of testimonials */}
+                    {testimonials.slice(currentTestimonial, currentTestimonial + 2).map((testimonial, idx) => (
+                      <div
+                        key={currentTestimonial + idx}
+                        className="bg-white rounded-2xl md:rounded-3xl shadow-lg p-4 md:p-7 flex flex-col justify-between w-full mx-auto max-w-[420px] h-[300px] md:h-[340px]"
+                      >
+                        <div className="flex-1 flex flex-col justify-between h-full">
+                          <p className="text-gray-700 text-sm md:text-base font-montserrat leading-relaxed mb-4 md:mb-6 line-clamp-[8] overflow-hidden">{testimonial.text}</p>
+                          <div className="mt-auto">
+                            <div className="flex gap-1 mb-2" aria-label="5 star rating">
+                              {[...Array(5)].map((_, i) => (
+                                <svg key={i} className="w-4 h-4 md:w-5 md:h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z" /></svg>
+                              ))}
+                            </div>
+                            <div>
+                              <span className="font-bold text-gray-900 font-montserrat text-sm md:text-base">{testimonial.name}</span>
+                              {testimonial.source && (
+                                <p className="text-gray-500 text-xs md:text-sm">{testimonial.source}</p>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+
+              {/* Navigation dots */}
+              <div className="flex justify-center gap-4 mt-10">
+                {[0, 1, 2].map((dotIndex) => (
+                  <button
+                    key={dotIndex}
+                    onClick={() => goToTestimonialGroup(dotIndex)}
+                    className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                      Math.floor(currentTestimonial / 2) === dotIndex 
+                        ? 'bg-[oklch(0.505_0.213_27.518)] scale-110' 
+                        : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                    aria-label={`View testimonials set ${dotIndex + 1}`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 } 
