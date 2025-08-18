@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 export default function HomeHealthPage() {
   return (
@@ -67,7 +66,7 @@ export default function HomeHealthPage() {
               </div>
               
               <h2 className="text-4xl font-extrabold mb-6 text-gray-900 font-montserrat">
-                You're In Good Hands
+                You&apos;re In Good Hands
               </h2>
               
               <div className="space-y-6 text-gray-700 font-montserrat">
@@ -193,7 +192,7 @@ export default function HomeHealthPage() {
               Each person who works for Maple Creek Home Health & Hospice provides important and necessary skills that help promote your well-being. Our team of quality nurses, aides, therapists, and allied healthcare professionals, all serve a vital role on our team. As we work together with your physician, our strategy is to develop a plan of care that will maximize your independence and quality of life.
             </p>
             <p className="text-xl font-semibold text-white font-montserrat">
-              Each plan is unique and each patient's success is measured and celebrated.
+              Each plan is unique and each patient&apos;s success is measured and celebrated.
             </p>
           </div>
           
@@ -420,6 +419,426 @@ export default function HomeHealthPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* FAQ Section */}
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          {/* Top Badge */}
+          <div className="text-center mb-6">
+            <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
+              <svg className="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span className="font-bold">FAQ</span>
+            </div>
+          </div>
+          
+          {/* Main Heading */}
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-6 font-montserrat">
+            Frequently Asked Questions: Home Health
+          </h2>
+          
+          {/* Introduction Text */}
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <p className="text-lg text-gray-700 font-montserrat">
+              What is Home Health? How is Home Health different from Hospice? Find the answers to your questions here.
+            </p>
+          </div>
+          
+          {/* FAQ Collapsible Questions */}
+          <div className="max-w-4xl mx-auto mb-12">
+            {/* FAQ Item 1 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    What is Home Health?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Home Health is skilled medical care provided in the comfort of your home. It includes services like nursing care, therapy, medication management, and more, all designed to help you recover from illness, injury, or surgery, or manage chronic conditions.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 2 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Who qualifies for Home Health care?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    To qualify for Home Health services, you generally need to be under a doctor&apos;s care, require skilled nursing or therapy services, and be considered homebound (meaning leaving home is difficult and requires considerable effort). Your doctor will need to certify these requirements for Medicare and most insurance coverage.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 3 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    How is Home Health different from Hospice?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    While both services provide care in the home, Home Health focuses on recovery and rehabilitation with the goal of helping patients regain independence. Hospice care is for those with terminal illnesses, focusing on comfort, dignity, and quality of life rather than curative treatment.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 4 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Who pays for Home Health?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Medicare, Medicaid, and most private insurance plans cover home health services when they are medically necessary and ordered by a physician. Medicare Part A and Part B cover 100% of eligible home health services with no copayment. Our team can help verify your coverage and explain any potential out-of-pocket costs.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 5 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    What services are provided in Home Health?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Home Health services typically include skilled nursing care, physical therapy, occupational therapy, speech therapy, medical social services, and home health aide services. These can include wound care, medication management, IV therapy, pain management, rehabilitation exercises, safety evaluations, and education on managing chronic conditions.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 6 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    How often will a healthcare professional visit?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    The frequency of visits depends on your individual needs and your physician&apos;s orders. Initially, visits may be more frequent, such as 2-3 times per week, and may decrease as your condition improves. Your care plan will be developed specifically for your needs and regularly adjusted based on your progress.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 7 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    How long does Home Health last?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Home Health services continue as long as they are medically necessary and you&apos;re making progress toward your health goals. Medicare typically certifies home health for 60-day periods, which can be renewed if you still meet eligibility requirements. The average duration is 4-8 weeks, but this varies widely depending on your condition and recovery rate.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 8 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Do I need a referral for Home Health?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Yes, you typically need a referral from your doctor for home health care services. Medicare and most insurance plans require a physician&apos;s order certifying that you need skilled care at home and are homebound. Our team can help coordinate with your doctor to get the necessary referrals.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 9 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group" open>
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Who oversees the care provided in Home Health?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Care is usually overseen by a registered nurse or therapist in collaboration with the patient&apos;s physician.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 10 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Can I choose my Home Health provider?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Yes, you have the right to choose your home health provider. While your doctor may recommend a specific agency, the final decision is yours. If you&apos;re being discharged from a hospital, you can request Maple Creek Home Health specifically as your provider of choice.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 11 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group" open>
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Is Home Health safe?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Reputable home health care providers follow strict protocols to ensure patient safety, including background checks of their staff and continuous training.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 12 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    How is the quality of Home Health agencies measured?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Home health agencies are evaluated based on patient outcomes, satisfaction scores, and adherence to healthcare standards. Medicare&apos;s Home Health Compare tool provides quality ratings and allows you to compare agencies. Maple Creek consistently achieves high ratings for quality care and patient satisfaction.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 13 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Will my personal information be kept confidential?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Yes, all home health agencies are required by law to protect your personal health information under HIPAA (Health Insurance Portability and Accountability Act). Your medical information is only shared with healthcare professionals directly involved in your care, and you have the right to access your records and control who can see your information.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 14 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Can family members be trained to provide some care?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Yes, family caregiver education is an important part of home health services. Our healthcare professionals will teach family members how to assist with medications, perform basic care tasks, recognize warning signs of complications, and help with exercises or treatments. This education helps ensure continuity of care between professional visits.
+                  </p>
+                </div>
+              </details>
+            </div>
+            
+            {/* FAQ Item 15 */}
+            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    What happens if I need care beyond what Home Health can provide?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    {/* Plus icon */}
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    {/* Minus icon */}
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    If your care needs exceed what home health can provide, our team will work with you and your physician to identify appropriate options. This might include transitioning to a higher level of care such as an assisted living facility, skilled nursing facility, or exploring additional in-home support services. As part of Maple Creek&apos;s comprehensive care network, we can often help facilitate these transitions within our care continuum.
+                  </p>
+                </div>
+              </details>
             </div>
           </div>
         </div>
