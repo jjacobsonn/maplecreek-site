@@ -64,12 +64,12 @@ export default function ServicesPage() {
                   <p className="text-gray-700 font-montserrat min-h-[160px]">
                     Home health focuses on recovery and rehabilitation. Home health care refers to a wide range of medical and non-medical services provided at a patient&apos;s home to help them recover from an illness, surgery, or manage chronic conditions. Our skilled nurses and therapists work together to create personalized care plans that promote independence and improve quality of life.
                   </p>
-                  <button className="mt-5 bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-2 px-5 rounded text-sm shadow transition-all duration-200 flex items-center">
+                  <a href="/home-health" className="mt-5 bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-2 px-5 rounded text-sm shadow transition-all duration-200 flex items-center w-fit">
                     LEARN MORE
                     <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
