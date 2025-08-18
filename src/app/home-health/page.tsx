@@ -366,6 +366,64 @@ export default function HomeHealthPage() {
           </div>
         </div>
       </section>
+
+      {/* Additional Services Section */}
+      <section className="w-full bg-[#f4f4f4] py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Left side: Content */}
+            <div className="w-full lg:w-1/2 lg:pr-8">
+              <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
+                <svg className="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+                <span className="font-bold">More Services</span>
+              </div>
+              
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6 font-montserrat leading-tight">
+                Learn About Additional Services We Offer
+              </h2>
+              
+              <p className="text-lg text-gray-700 font-montserrat mb-8">
+                In addition to home health, Maple Creek provides a range of specialized care services designed to meet your specific healthcare needs and improve quality of life.
+              </p>
+            </div>
+            
+            {/* Right side: Service Card */}
+            <div className="w-full lg:w-1/2">
+              <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[oklch(0.505_0.213_27.518)]">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                  {/* Left: Circle Image */}
+                  <div className="flex-shrink-0 flex items-center justify-center">
+                    <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-[oklch(0.505_0.213_27.518)]">
+                      <Image 
+                        src="/images/img-2.jpg"
+                        alt="Hospice Care"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Right: Content */}
+                  <div className="flex-grow">
+                    <h3 className="text-2xl font-bold mb-2 text-gray-900 font-montserrat">Hospice Care</h3>
+                    <p className="text-gray-700 font-montserrat min-h-[160px]">
+                      Hospice care, when administered at the optimal juncture, offers patients the invaluable gift of time. It affords them the opportunity to come to terms with their diagnosis, relish moments of nostalgia, bid their farewells, and put their affairs in order. Our team provides compassionate end-of-life care focused on comfort and dignity.
+                    </p>
+                    <button className="mt-5 bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-2 px-5 rounded text-sm shadow transition-all duration-200 flex items-center">
+                      LEARN MORE
+                      <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
