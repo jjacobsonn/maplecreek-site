@@ -39,7 +39,7 @@ export default function HospicePage() {
       </section>
 
       {/* Hospice Staff Section */}
-      <section className="w-full bg-white py-16">
+  <section className="w-full bg-[#f4f4f4] py-16">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Left side: Staff image */}
@@ -114,7 +114,9 @@ export default function HospicePage() {
       </section>
 
       {/* Animated Stats Section (reused from About) */}
-      <AnimatedStats />
+      <div style={{ background: '#f4f4f4', width: '100%' }}>
+        <AnimatedStats />
+      </div>
     </>
   );
 }
