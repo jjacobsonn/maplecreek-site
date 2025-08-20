@@ -1,5 +1,7 @@
 "use client";
+
 import Image from "next/image";
+import AnimatedStats from "../../components/AnimatedStats";
 
 export default function HospicePage() {
   return (
@@ -110,6 +112,9 @@ export default function HospicePage() {
           </div>
         </div>
       </section>
+
+      {/* Animated Stats Section (reused from About) */}
+      <AnimatedStats />
     </>
   );
 }
