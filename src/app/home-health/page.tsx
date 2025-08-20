@@ -216,12 +216,14 @@ export default function HomeHealthPage() {
             <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Physician */}
               <div className="p-6">
-                <div className="bg-white rounded-lg p-4 w-16 h-16 flex items-center justify-center mb-5">
-                  <svg className="w-10 h-10 text-[oklch(0.505_0.213_27.518)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.5 21h-10A2.5 2.5 0 015 18.5v-14A2.5 2.5 0 017.5 2h10A2.5 2.5 0 0120 4.5v14a2.5 2.5 0 01-2.5 2.5z"></path>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4v16M12.5 8.5c1 0 1.5-.5 2.5-.5s2 .5 3 .5v8c-1 0-1.5-.5-2.5-.5s-2 .5-3 .5"></path>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11.5 8.5c-1 0-1.5-.5-2.5-.5s-2 .5-3 .5v8c1 0 1.5-.5 2.5-.5s2 .5 3 .5"></path>
-                  </svg>
+                <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
+                  <Image
+                    src="/images/icon-20.png"
+                    alt="Physician Icon"
+                    width={60}
+                    height={60}
+                    className="object-contain"
+                  />
                 </div>
                 <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Your Physician</h4>
                 <p className="text-white/95 text-lg font-montserrat">
@@ -231,10 +233,14 @@ export default function HomeHealthPage() {
               
               {/* Our Team */}
               <div className="p-6">
-                <div className="bg-white rounded-lg p-4 w-16 h-16 flex items-center justify-center mb-5">
-                  <svg className="w-10 h-10 text-[oklch(0.505_0.213_27.518)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                  </svg>
+                <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
+                  <Image
+                    src="/images/icon-21.png"
+                    alt="Team Icon"
+                    width={60}
+                    height={60}
+                    className="object-contain"
+                  />
                 </div>
                 <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Our Team</h4>
                 <p className="text-white/95 text-lg font-montserrat">
@@ -244,10 +250,14 @@ export default function HomeHealthPage() {
               
               {/* The Patient */}
               <div className="p-6">
-                <div className="bg-white rounded-lg p-4 w-16 h-16 flex items-center justify-center mb-5">
-                  <svg className="w-10 h-10 text-[oklch(0.505_0.213_27.518)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                  </svg>
+                <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
+                  <Image
+                    src="/images/icon-22.png"
+                    alt="Patient Icon"
+                    width={60}
+                    height={60}
+                    className="object-contain"
+                  />
                 </div>
                 <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">The Patient</h4>
                 <p className="text-white/95 text-lg font-montserrat">
@@ -257,10 +267,14 @@ export default function HomeHealthPage() {
               
               {/* Family & Caregivers */}
               <div className="p-6">
-                <div className="bg-white rounded-lg p-4 w-16 h-16 flex items-center justify-center mb-5">
-                  <svg className="w-10 h-10 text-[oklch(0.505_0.213_27.518)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                  </svg>
+                <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
+                  <Image
+                    src="/images/icon-23.png"
+                    alt="Family & Caregivers Icon"
+                    width={60}
+                    height={60}
+                    className="object-contain"
+                  />
                 </div>
                 <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Family & Caregivers</h4>
                 <p className="text-white/95 text-lg font-montserrat">
@@ -452,7 +466,7 @@ export default function HomeHealthPage() {
           {/* FAQ Collapsible Questions */}
           <div className="max-w-4xl mx-auto mb-12">
             {/* FAQ Item 1 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -478,7 +492,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 2 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -504,7 +518,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 3 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -530,7 +544,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 4 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -556,7 +570,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 5 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -582,7 +596,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 6 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -608,7 +622,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 7 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -634,7 +648,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 8 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -660,7 +674,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 9 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group" open>
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -686,7 +700,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 10 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -712,7 +726,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 11 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group" open>
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -738,7 +752,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 12 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -764,7 +778,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 13 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -790,7 +804,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 14 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
@@ -816,7 +830,7 @@ export default function HomeHealthPage() {
             </div>
             
             {/* FAQ Item 15 */}
-            <div className="border border-gray-200 rounded-xl overflow-hidden mb-4">
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
               <details className="group">
                 <summary className="flex justify-between items-center p-6 cursor-pointer">
                   <h3 className="text-xl font-bold text-gray-800 font-montserrat">
