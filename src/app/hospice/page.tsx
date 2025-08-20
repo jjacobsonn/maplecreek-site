@@ -6,11 +6,12 @@ import AnimatedStats from "../../components/AnimatedStats";
 export default function HospicePage() {
   return (
     <div style={{ background: '#f4f4f4', minHeight: '100vh', width: '100%' }}>
+      {/* Hospice Banner Section */}
       <section className="w-full">
         <div className="relative w-full h-[28vh] md:h-[36vh] lg:h-[44vh] xl:h-[52vh]">
           <Image
             src="/images/img-14.jpg"
-            alt="Hospice Care Banner"
+            alt="Hospice Banner"
             fill
             priority
             className="object-cover object-center w-full h-full"
@@ -22,24 +23,23 @@ export default function HospicePage() {
               <Image
                 src="/images/icon-19.png"
                 alt="Hospice Icon"
-                width={24}
-                height={24}
-                className="inline-block w-6 h-6 mr-2 brightness-0 invert"
+                width={20}
+                height={20}
+                className="inline-block w-5 h-5 mr-2 brightness-0 invert"
               />
-              <span className="font-bold">Hospice Care</span>
+              <span className="font-bold">Hospice</span>
             </div>
             <h1 className="text-white text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-extrabold drop-shadow-lg mb-4 max-w-4xl">
-              Learn About Our Compassionate<br />Hospice Services
+              Learn About Our Compassionate Hospice Services
             </h1>
             <p className="text-white text-lg sm:text-lg md:text-xl font-medium drop-shadow mb-6 max-w-3xl">
-              Custom Care provides high quality Hospice care through individualized, compassionate service. Our Hospice services are available all throughout Utah County.
+              Maple Creek provides high quality Hospice care through individualized, compassionate service. Our Hospice services are available all throughout Utah County.
             </p>
           </div>
         </div>
-  </section>
-
+      </section>
       {/* Hospice Staff Section */}
-  <section className="w-full bg-white py-16">
+      <section className="w-full bg-white py-16">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Left side: Staff image */}
@@ -112,6 +112,7 @@ export default function HospicePage() {
           </div>
         </div>
       </section>
+      {/* Roadmap To Hospice Care Section (bottom) */}
 
       {/* Animated Stats Section (reused from About) */}
       <div style={{ background: 'white', width: '100%' }}>
@@ -163,6 +164,112 @@ export default function HospicePage() {
                 </svg>
                 801-798-5333
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Roadmap To Hospice Care Section (after Contact) */}
+      <section className="w-full bg-[oklch(0.505_0.213_27.518)] py-16 text-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          {/* Top Badge */}
+          <div className="text-center mb-6">
+            <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat border border-white">
+              <svg className="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+              </svg>
+              <span className="font-bold">Roadmap To Hospice Care</span>
+            </div>
+          </div>
+          {/* Main Heading */}
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-white text-center mb-8 font-montserrat">
+            A Personalized Plan That Works For You
+          </h2>
+          {/* Main Content */}
+          <div className="text-center max-w-4xl mx-auto mb-16">
+            <p className="text-lg text-white/90 mb-6 font-montserrat">
+              Each person who works for <span className="font-bold">Custom Care Home Health & Hospice</span> provides important and necessary skills that help promote your well-being. Our team of <span className="font-bold">quality nurses, aides, therapists, and allied healthcare professionals</span>, all serve a vital role on our team. As we work together with your physician, our strategy is to develop a plan of care that will <span className="font-bold">maximize your independence and quality of life</span>. Each plan is unique and each patient’s success is measured and celebrated.
+            </p>
+          </div>
+          {/* Divider Line */}
+          <div className="w-full h-px bg-white my-12"></div>
+          {/* Teamwork Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mt-24 mb-24">
+            {/* Left Column */}
+            <div className="lg:col-span-5 lg:pr-12">
+              <h3 className="text-5xl sm:text-6xl font-bold text-white mb-10 font-montserrat leading-tight">
+                Teamwork<br />Means<br />Success
+              </h3>
+              <p className="text-xl sm:text-2xl text-white/95 font-montserrat">
+                We also know it takes a team to be successful. Each member shares responsibility and contributes to your treatment plan to assure the highest quality of services are delivered with compassion, respect, and attention to your individual needs. Together, we create a supportive environment that promotes healing, independence, and an improved quality of life.
+              </p>
+            </div>
+            {/* Right Column - 2x2 Grid */}
+            <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-12">
+              {/* Physician */}
+              <div className="p-6">
+                <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
+                  <Image
+                    src="/images/icon-20.png"
+                    alt="Physician Icon"
+                    width={60}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Your Physician</h4>
+                <p className="text-white/95 text-lg font-montserrat">
+                  Guides the care strategy and provides medical oversight throughout your treatment journey.
+                </p>
+              </div>
+              {/* Our Team */}
+              <div className="p-6">
+                <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
+                  <Image
+                    src="/images/icon-21.png"
+                    alt="Team Icon"
+                    width={60}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Our Team</h4>
+                <p className="text-white/95 text-lg font-montserrat">
+                  Delivers specialized care through our skilled nurses, therapists, and aides to help you reach your recovery goals.
+                </p>
+              </div>
+              {/* The Patient */}
+              <div className="p-6">
+                <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
+                  <Image
+                    src="/images/icon-22.png"
+                    alt="Patient Icon"
+                    width={60}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">The Patient</h4>
+                <p className="text-white/95 text-lg font-montserrat">
+                  Active participant in the recovery journey with personal health goals and treatment preferences.
+                </p>
+              </div>
+              {/* Family & Caregivers */}
+              <div className="p-6">
+                <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
+                  <Image
+                    src="/images/icon-23.png"
+                    alt="Family & Caregivers Icon"
+                    width={60}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Family & Caregivers</h4>
+                <p className="text-white/95 text-lg font-montserrat">
+                  Essential support network providing daily assistance and emotional encouragement throughout recovery.
+                </p>
+              </div>
             </div>
           </div>
         </div>
