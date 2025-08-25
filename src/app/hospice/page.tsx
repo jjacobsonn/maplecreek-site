@@ -274,6 +274,546 @@ export default function HospicePage() {
           </div>
         </div>
       </section>
+      {/* When Is It Time Section */}
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          {/* Top Badge */}
+          <div className="text-center mb-6">
+            <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
+              <svg className="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span className="font-bold">Plan Of Action</span>
+            </div>
+          </div>
+          
+          {/* Main Heading */}
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-6 font-montserrat">
+            When Is It Time For Hospice?
+          </h2>
+          
+          {/* Introduction Text */}
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <p className="text-lg text-gray-700 font-montserrat">
+              Unfortunately, most seniors find themselves struggling with various activities throughout the day. <br />
+              Here are a few signs that you or a loved one may be in need of hospice services from Maple Creek.
+            </p>
+          </div>
+          
+          {/* Criteria Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 font-montserrat">
+                Treatment is no longer working and/or they no longer desire aggressive intervention
+              </h3>
+            </div>
+
+            {/* Card 2 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 font-montserrat">
+                They sleep much of the time
+              </h3>
+            </div>
+
+            {/* Card 3 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 font-montserrat">
+                They often seem confused or restless
+              </h3>
+            </div>
+
+            {/* Card 4 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 font-montserrat">
+                They’re less able to communicate
+              </h3>
+            </div>
+
+            {/* Card 5 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 font-montserrat">
+                They don’t have much appetite or are losing weight for no apparent reason
+              </h3>
+            </div>
+
+            {/* Card 6 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 font-montserrat">
+                They have multiple recurrent infections
+              </h3>
+            </div>
+
+            {/* Card 7 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 font-montserrat">
+                Their symptoms are getting harder to manage
+              </h3>
+            </div>
+
+            {/* Card 8 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 font-montserrat">
+                They’re visiting the doctor or hospital more often
+              </h3>
+            </div>
+
+            {/* Card 9 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 bg-white">
+              <h3 className="text-xl font-bold text-gray-800 mb-3 font-montserrat">
+                Family and caregivers feel overwhelmed by the increasing needs
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Additional Services Section */}
+      <section className="w-full bg-[#f4f4f4] py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Left side: Content */}
+            <div className="w-full lg:w-1/2 lg:pr-8">
+              <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
+                <svg className="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+                <span className="font-bold">More Services</span>
+              </div>
+              
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6 font-montserrat leading-tight">
+                Learn About Additional Services We Offer
+              </h2>
+              
+              <p className="text-lg text-gray-700 font-montserrat mb-8">
+                In addition to hospice, Maple Creek provides a range of specialized home health services designed to help you recover, regain independence, and improve your quality of life in the comfort of your own home.
+              </p>
+            </div>
+            
+            {/* Right side: Service Card */}
+            <div className="w-full lg:w-1/2">
+              <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-[oklch(0.505_0.213_27.518)]">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                  {/* Left: Circle Image */}
+                  <div className="flex-shrink-0 flex items-center justify-center">
+                    <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-[oklch(0.505_0.213_27.518)]">
+                      <Image 
+                        src="/images/img-6.jpg"
+                        alt="Hospice Care"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Right: Content */}
+                  <div className="flex-grow">
+                    <h3 className="text-2xl font-bold mb-2 text-gray-900 font-montserrat">Home Health Care</h3>
+                    <p className="text-gray-700 font-montserrat min-h-[160px]">
+                      Home health care brings skilled nursing, therapy, and support services directly to your home. Our team helps you recover from illness, injury, or surgery, manage chronic conditions, and regain your independence—all in a familiar and comfortable environment. We focus on your goals, safety, and well-being every step of the way.
+                    </p>
+                    <a href="/home-health" className="mt-5 bg-[oklch(0.505_0.213_27.518)] hover:brightness-110 text-white font-bold py-2 px-5 rounded text-sm shadow transition-all duration-200 flex items-center w-fit">
+                      LEARN MORE
+                      <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* FAQ Section */}
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          {/* Top Badge */}
+          <div className="text-center mb-6">
+            <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
+              <svg className="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span className="font-bold">FAQ</span>
+            </div>
+          </div>
+          
+          {/* Main Heading */}
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-6 font-montserrat">
+            Frequently Asked Questions: Hospice Care
+          </h2>
+          
+          {/* Introduction Text */}
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <p className="text-lg text-gray-700 font-montserrat">
+              What is Hospice? Is Hospice care just for cancer patients? How do you pay for Hospice? Find the answers to your questions here.
+            </p>
+          </div>
+          
+          {/* FAQ Collapsible Questions */}
+          <div className="max-w-4xl mx-auto mb-12">
+            {/* FAQ Item 1 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    What is Hospice?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Hospice care focuses on the comfort and quality of life for patients with terminal illnesses, rather than curative treatments.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 2 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Who is eligible for Hospice?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Patients diagnosed with a terminal illness with a life expectancy of six months or less, if the illness runs its expected course, may qualify.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 3 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Where is Hospice care provided?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Hospice care can be provided in various settings, including a patient’s home, a hospice facility, hospitals, nursing homes, and other long-term care facilities.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 4 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Is Hospice just for cancer patients?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    No, Hospice is for anyone with a life-limiting illness, including heart disease, Alzheimer’s disease, lung disease, and many others.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 5 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Who pays for Hospice?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Medicare, Medicaid, and most private insurance plans offer Hospice benefits. Additionally, many hospice organizations offer financial assistance or care based on ability to pay.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 6 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    What services are provided in Hospice?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Services can include medical care, pain management, emotional and spiritual support, counseling, respite care for families, and more.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 7 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    How does Hospice manage pain and other symptoms?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Hospice professionals are skilled in managing pain and symptoms with medications, therapies, and other methods.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 8 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Can a patient keep their personal physician while in Hospice?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Yes, many Hospice programs encourage patients to maintain their relationship with their personal physicians.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 9 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    What happens if a patient lives longer than six months while on Hospice?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    If the patient’s condition stabilizes or improves, they might be discharged from Hospice. However, if they continue to decline, the eligibility can be re-evaluated and extended.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 10 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    How is Hospice different from Palliative care?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    While both focus on comfort and symptom relief, Palliative care can be pursued at any stage of an illness, while Hospice is typically reserved for the final months of life.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 11 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Can treatments be continued while on Hospice?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Hospice focuses on comfort and quality of life. Curative treatments might be stopped, but some treatments that provide comfort can continue.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 12 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Does choosing Hospice mean giving up hope?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    No, it means prioritizing comfort and quality of life over aggressive treatments. Many families find that Hospice allows them to enjoy their remaining time with loved ones more fully.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 13 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    Can someone leave Hospice care?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Yes, patients can leave hospice care and return to curative treatments if they wish or if their condition improves.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 14 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    How does one start the process of getting into Hospice?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Typically, a referral from a physician is needed, followed by an assessment from the Hospice Team.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            {/* FAQ Item 15 */}
+            <div className="border-2 border-[oklch(0.505_0.213_27.518)] rounded-xl overflow-hidden mb-4">
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer">
+                  <h3 className="text-xl font-bold text-gray-800 font-montserrat">
+                    What role do families play in Hospice?
+                  </h3>
+                  <div className="flex-shrink-0 w-8 h-8 bg-[oklch(0.505_0.213_27.518)] rounded-full flex items-center justify-center transition-all duration-300">
+                    <svg className="w-5 h-5 text-white group-open:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <svg className="w-5 h-5 text-white hidden group-open:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M18 12H6"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <div className="p-6 pt-0 border-t border-gray-100">
+                  <p className="text-gray-700 font-montserrat">
+                    Families are an integral part of the Hospice experience. They are involved in making decisions, providing care, and are also offered support and counseling.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
   </div>
   );
 }
