@@ -263,7 +263,7 @@ export default function ServicesPage() {
             <div className="w-full flex items-center justify-center px-4 py-6 lg:py-12">
               <div className="rounded-xl overflow-hidden shadow-lg h-[400px] w-[90%]">
                 <Image 
-                  src="/images/img-5.jpg"
+                  src="/images/img-15.jpg"
                   alt="Consultation benefits"
                   className="w-full h-full object-cover"
                   width={800}
