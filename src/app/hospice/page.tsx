@@ -46,13 +46,18 @@ export default function HospicePage() {
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Left side: Staff image */}
             <div className="w-full lg:w-2/5 lg:self-start lg:sticky lg:top-24">
-              <div className="rounded-3xl overflow-hidden border-8 border-[oklch(0.505_0.213_27.518)] shadow-xl mt-16 lg:mt-0 h-[400px] md:h-[450px] lg:h-[500px] xl:h-[580px]">
+              <div className="rounded-3xl overflow-hidden border-8 border-[oklch(0.505_0.213_27.518)] shadow-xl mt-16 lg:mt-0 relative mx-auto" 
+                   style={{ 
+                     aspectRatio: '3/4',
+                     maxHeight: '480px',
+                     maxWidth: '360px'
+                   }}>
                 <Image 
                   src="/images/img-16.jpg"
                   alt="Hospice Staff"
-                  width={600}
-                  height={1600}
-                  className="w-full h-full object-cover object-top"
+                  fill
+                  sizes="(max-width: 1024px) 90vw, 360px"
+                  className="object-cover object-top"
                   priority
                 />
               </div>
