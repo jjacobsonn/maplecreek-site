@@ -2,44 +2,20 @@
 
 import Image from "next/image";
 import AnimatedStats from "../../components/AnimatedStats";
+import BannerSection from "@/components/BannerSection";
 
 export default function HospicePage() {
   return (
     <div style={{ background: '#f4f4f4', minHeight: '100vh', width: '100%' }}>
-      {/* Hospice Banner Section */}
-      <section className="w-full">
-        <div className="relative w-full h-[28vh] md:h-[36vh] lg:h-[44vh] xl:h-[52vh]">
-          <Image
-            src="/images/img-20.jpg?v=1"
-            alt="Hospice Banner"
-            fill
-            priority
-            className="object-cover object-center w-full h-full"
-            sizes="100vw"
-          />
-          {/* Overlay content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center md:pt-8 lg:pt-0 text-center px-4 bg-black/30 font-montserrat">
-            <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 mb-2 sm:mb-4 font-montserrat">
-              <Image
-                src="/images/icon-19.png"
-                alt="Hospice Icon"
-                width={20}
-                height={20}
-                className="inline-block w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2 brightness-0 invert"
-              />
-              <span className="font-bold text-sm sm:text-base">Hospice</span>
-            </div>
-            <h1 className="text-white text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-extrabold drop-shadow-lg mb-2 sm:mb-4 max-w-4xl">
-              <span className="block lg:inline">Learn About Our Compassionate</span>
-              <span className="block lg:inline"> Hospice Services</span>
-            </h1>
-            <p className="text-white text-base sm:text-lg md:text-xl font-medium drop-shadow mb-4 sm:mb-6 max-w-3xl">
-              Maple Creek provides high quality Hospice care through individualized, compassionate service.
-              <span className="hidden xs:inline"> Our Hospice services are available all throughout Utah County.</span>
-            </p>
-          </div>
-        </div>
-      </section>
+      <BannerSection
+        imageSrc="/images/img-20.jpg?v=1"
+        imageAlt="Hospice Banner"
+        title="Compassionate Hospice Services"
+        description="Dignity and comfort for patients throughout Utah County."
+        iconSrc="/images/icon-19.png"
+        iconAlt="Hospice Icon"
+        buttonText="Hospice"
+      />
       {/* Hospice Staff Section */}
       <section className="w-full bg-white py-16">
         <div className="max-w-7xl mx-auto px-6 md:px-12">

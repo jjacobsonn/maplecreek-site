@@ -1,42 +1,19 @@
 "use client";
 import Image from "next/image";
+import BannerSection from "@/components/BannerSection";
 
 export default function HomeHealthPage() {
   return (
     <>
-      <section className="w-full">
-        <div className="relative w-full h-[28vh] md:h-[36vh] lg:h-[44vh] xl:h-[52vh]">
-          <Image
-            src="/images/img-12.jpg"
-            alt="Home Health Banner"
-            fill
-            priority
-            className="object-cover object-center w-full h-full"
-            sizes="100vw"
-          />
-          {/* Overlay content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center md:pt-8 lg:pt-0 text-center px-4 bg-black/30 font-montserrat">
-            <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 mb-2 sm:mb-4 font-montserrat">
-              <Image
-                src="/images/icon-19.png"
-                alt="Home Health Icon"
-                width={20}
-                height={20}
-                className="inline-block w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2 brightness-0 invert"
-              />
-              <span className="font-bold text-sm sm:text-base">Home Health</span>
-            </div>
-            <h1 className="text-white text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-extrabold drop-shadow-lg mb-2 sm:mb-4 max-w-4xl">
-              <span className="block lg:inline">Learn About Our Professional</span>
-              <span className="block lg:inline"> Home Health Services</span>
-            </h1>
-            <p className="text-white text-base sm:text-lg md:text-xl font-medium drop-shadow mb-4 sm:mb-6 max-w-3xl">
-              Maple Creek provides high quality Home Health through individualized, compassionate service.
-              <span className="hidden xs:inline"> Our Home Health services are available all throughout Utah County.</span>
-            </p>
-          </div>
-        </div>
-      </section>
+      <BannerSection
+        imageSrc="/images/img-12.jpg"
+        imageAlt="Home Health Banner"
+        title="Professional Home Health Services"
+        description="Quality care in the comfort of your home throughout Utah County."
+        iconSrc="/images/icon-19.png"
+        iconAlt="Home Health Icon"
+        buttonText="Home Health"
+      />
 
       {/* Home Health Staff Section */}
       <section className="w-full bg-white py-16">
@@ -44,13 +21,18 @@ export default function HomeHealthPage() {
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Left side: Image with border - aligned to match content height */}
             <div className="w-full lg:w-2/5 lg:self-start lg:sticky lg:top-24">
-              <div className="rounded-3xl overflow-hidden border-8 border-[oklch(0.505_0.213_27.518)] shadow-xl mt-16 lg:mt-0 h-[400px] md:h-[450px] lg:h-[500px] xl:h-[580px]">
+              <div className="rounded-3xl overflow-hidden border-8 border-[oklch(0.505_0.213_27.518)] shadow-xl mt-16 lg:mt-0 relative mx-auto"
+                   style={{ 
+                     aspectRatio: '3/4',
+                     maxHeight: '480px',
+                     maxWidth: '360px'
+                   }}>
                 <Image 
                   src="/images/img-19.jpg"
                   alt="Home Health Staff"
-                  width={600}
-                  height={1600}
-                  className="w-full h-full object-cover object-top"
+                  fill
+                  sizes="(max-width: 1024px) 90vw, 360px"
+                  className="object-cover object-top"
                   priority
                 />
               </div>
