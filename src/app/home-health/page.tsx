@@ -243,7 +243,7 @@ export default function HomeHealthPage() {
             {/* Right Column - 2x2 Grid */}
             <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Physician */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col items-center md:items-start">
                 <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
                   <Image
                     src="/images/icon-20.png"
@@ -253,14 +253,14 @@ export default function HomeHealthPage() {
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Your Physician</h4>
-                <p className="text-white/95 text-lg font-montserrat">
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat text-center md:text-left">Your Physician</h4>
+                <p className="text-white/95 text-lg font-montserrat text-center md:text-left">
                   Guides the care strategy and provides medical oversight throughout your treatment journey.
                 </p>
               </div>
               
               {/* Our Team */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col items-center md:items-start">
                 <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
                   <Image
                     src="/images/icon-21.png"
@@ -270,14 +270,14 @@ export default function HomeHealthPage() {
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Our Team</h4>
-                <p className="text-white/95 text-lg font-montserrat">
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat text-center md:text-left">Our Team</h4>
+                <p className="text-white/95 text-lg font-montserrat text-center md:text-left">
                   Delivers specialized care through our skilled nurses, therapists, and aides to help you reach your recovery goals.
                 </p>
               </div>
               
               {/* The Patient */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col items-center md:items-start">
                 <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
                   <Image
                     src="/images/icon-22.png"
@@ -287,14 +287,14 @@ export default function HomeHealthPage() {
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">The Patient</h4>
-                <p className="text-white/95 text-lg font-montserrat">
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat text-center md:text-left">The Patient</h4>
+                <p className="text-white/95 text-lg font-montserrat text-center md:text-left">
                   Active participant in the recovery journey with personal health goals and treatment preferences.
                 </p>
               </div>
               
               {/* Family & Caregivers */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col items-center md:items-start">
                 <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
                   <Image
                     src="/images/icon-23.png"
@@ -304,8 +304,8 @@ export default function HomeHealthPage() {
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Family & Caregivers</h4>
-                <p className="text-white/95 text-lg font-montserrat">
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat text-center md:text-left">Family & Caregivers</h4>
+                <p className="text-white/95 text-lg font-montserrat text-center md:text-left">
                   Essential support network providing daily assistance and emotional encouragement throughout recovery.
                 </p>
               </div>
