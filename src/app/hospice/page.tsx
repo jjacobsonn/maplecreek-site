@@ -19,20 +19,33 @@ export default function HospicePage() {
       {/* Hospice Staff Section */}
       <section className="w-full bg-white py-16">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
+          {/* Mobile Header - Only visible on mobile */}
+          <div className="flex flex-col items-center lg:hidden mb-6">
+            {/* Badge at top with Hospice icon */}
+            <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
+              <Image
+                src="/images/icon-20.png"
+                alt="Hospice Staff Icon"
+                width={20}
+                height={20}
+                className="inline-block w-5 h-5 mr-2 brightness-0 invert"
+              />
+              <span className="font-bold">Hospice Staff</span>
+            </div>
+            <h2 className="text-4xl font-extrabold mb-6 text-gray-900 font-montserrat text-center">
+              Compassionate & Professional Hospice Care
+            </h2>
+          </div>
+
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Left side: Staff image */}
-            <div className="w-full lg:w-2/5 lg:self-start lg:sticky lg:top-24">
-              <div className="rounded-3xl overflow-hidden border-8 border-[oklch(0.505_0.213_27.518)] shadow-xl mt-16 lg:mt-0 relative mx-auto" 
-                   style={{ 
-                     aspectRatio: '3/4',
-                     maxHeight: '480px',
-                     maxWidth: '360px'
-                   }}>
+            <div className="w-full lg:w-2/5 lg:self-start lg:sticky lg:top-24 flex justify-center lg:justify-start">
+              <div className="rounded-3xl overflow-hidden border-8 border-[oklch(0.505_0.213_27.518)] shadow-xl mt-0 lg:mt-0 relative mx-auto w-[300px] h-[400px] sm:w-[360px] sm:h-[480px]">
                 <Image 
                   src="/images/img-16.jpg"
                   alt="Hospice Staff"
                   fill
-                  sizes="(max-width: 1024px) 90vw, 360px"
+                  sizes="(max-width: 640px) 300px, (max-width: 1024px) 360px, 360px"
                   className="object-cover object-top"
                   priority
                 />
@@ -40,9 +53,9 @@ export default function HospicePage() {
             </div>
 
             {/* Right side: Content, header, and staff list */}
-            <div className="w-full lg:w-3/5">
-              {/* Badge at top with Home Health icon */}
-              <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
+            <div className="w-full lg:w-3/5 flex flex-col items-center lg:items-start">
+              {/* Badge at top with Home Health icon - Only visible on desktop */}
+              <div className="hidden lg:inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
                 <Image
                   src="/images/icon-20.png"
                   alt="Hospice Staff Icon"
@@ -52,10 +65,10 @@ export default function HospicePage() {
                 />
                 <span className="font-bold">Hospice Staff</span>
               </div>
-              <h2 className="text-4xl font-extrabold mb-6 text-gray-900 font-montserrat">
+              <h2 className="hidden lg:block text-4xl font-extrabold mb-6 text-gray-900 font-montserrat">
                 Compassionate & Professional Hospice Care
               </h2>
-              <p className="text-gray-700 text-lg mb-8">
+              <p className="text-gray-700 text-lg mb-8 text-center lg:text-left">
                 Our goal is to provide comfort, dignity and quality of life for every one of our patients. Every effort is made by the Hospice Team to provide maximum physical comfort for the patient. Once the patient is comfortable, the hospice team then focuses on preparing the patient and loved ones emotionally and spiritually for death.
               </p>
               <a 
@@ -67,10 +80,12 @@ export default function HospicePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                 </svg>
               </a>
-              <p className="text-lg text-gray-700 font-montserrat mb-6">
+              <p className="text-lg text-gray-700 font-montserrat mb-6 text-center lg:text-left">
                 We have a team of professionals who are passionately committed to providing adults and seniors with skilled nursing, rehabilitative, and therapeutic services.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-4 mt-2">
+              
+              {/* Desktop/Tablet Staff List - Two columns */}
+              <div className="hidden md:grid grid-cols-2 gap-x-10 gap-y-4 mt-2 w-full">
                 {[
                   'Registered Nurses (RNs)',
                   'Certified Nursing Assistants (CNAs)',
@@ -81,7 +96,7 @@ export default function HospicePage() {
                   'Speech Therapists (STs)',
                   'Medical Social Workers (MSW)'
                 ].map((role) => (
-                  <div className="flex items-center" key={role}>
+                  <div className="flex items-center justify-start" key={role}>
                     <div className="p-2 rounded-full bg-[oklch(0.505_0.213_27.518)]/10 mr-3">
                       <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
@@ -90,6 +105,31 @@ export default function HospicePage() {
                     <span className="text-gray-700 font-montserrat">{role}</span>
                   </div>
                 ))}
+              </div>
+              
+              {/* Mobile Staff List - Clean single column with consistent alignment */}
+              <div className="block md:hidden mt-4 max-w-xs mx-auto w-full">
+                <ul className="space-y-3 font-montserrat">
+                  {[
+                    'Registered Nurses (RNs)',
+                    'Certified Nursing Assistants (CNAs)',
+                    'Physical Therapists (PTs)',
+                    'Physical Therapy Assistants (PTAs)',
+                    'Occupational Therapists (OTs)',
+                    'Certified Occupational Therapy Assistants (COTAs)',
+                    'Speech Therapists (STs)',
+                    'Medical Social Workers (MSW)'
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-center">
+                      <div className="min-w-[28px] h-7 rounded-full bg-[oklch(0.505_0.213_27.518)]/10 mr-3 flex items-center justify-center">
+                        <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -190,7 +230,7 @@ export default function HospicePage() {
             {/* Right Column - 2x2 Grid */}
             <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Physician */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col items-center md:items-start">
                 <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
                   <Image
                     src="/images/icon-20.png"
@@ -200,13 +240,13 @@ export default function HospicePage() {
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Your Physician</h4>
-                <p className="text-white/95 text-lg font-montserrat">
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat text-center md:text-left">Your Physician</h4>
+                <p className="text-white/95 text-lg font-montserrat text-center md:text-left">
                   Guides the care strategy and provides medical oversight throughout your treatment journey.
                 </p>
               </div>
               {/* Our Team */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col items-center md:items-start">
                 <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
                   <Image
                     src="/images/icon-21.png"
@@ -216,13 +256,13 @@ export default function HospicePage() {
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Our Team</h4>
-                <p className="text-white/95 text-lg font-montserrat">
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat text-center md:text-left">Our Team</h4>
+                <p className="text-white/95 text-lg font-montserrat text-center md:text-left">
                   Delivers specialized care through our skilled nurses, therapists, and aides to help you reach your recovery goals.
                 </p>
               </div>
               {/* The Patient */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col items-center md:items-start">
                 <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
                   <Image
                     src="/images/icon-22.png"
@@ -232,13 +272,13 @@ export default function HospicePage() {
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">The Patient</h4>
-                <p className="text-white/95 text-lg font-montserrat">
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat text-center md:text-left">The Patient</h4>
+                <p className="text-white/95 text-lg font-montserrat text-center md:text-left">
                   Active participant in the recovery journey with personal health goals and treatment preferences.
                 </p>
               </div>
               {/* Family & Caregivers */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col items-center md:items-start">
                 <div className="bg-white rounded-lg p-4 w-20 h-20 flex items-center justify-center mb-5">
                   <Image
                     src="/images/icon-23.png"
@@ -248,8 +288,8 @@ export default function HospicePage() {
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat">Family & Caregivers</h4>
-                <p className="text-white/95 text-lg font-montserrat">
+                <h4 className="text-2xl font-bold text-white mb-3 font-montserrat text-center md:text-left">Family & Caregivers</h4>
+                <p className="text-white/95 text-lg font-montserrat text-center md:text-left">
                   Essential support network providing daily assistance and emotional encouragement throughout recovery.
                 </p>
               </div>
