@@ -72,7 +72,7 @@ export default function HospicePage() {
                 Our goal is to provide comfort, dignity and quality of life for every one of our patients. Every effort is made by the Hospice Team to provide maximum physical comfort for the patient. Once the patient is comfortable, the hospice team then focuses on preparing the patient and loved ones emotionally and spiritually for death.
               </p>
               <a 
-                href="/contact" 
+                href="/consultation" 
                 className="inline-block bg-[oklch(0.505_0.213_27.518)] hover:brightness-125 text-white font-bold py-3 px-8 rounded-md text-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform-gpu font-montserrat mb-6"
               >
                 Schedule a Consultation

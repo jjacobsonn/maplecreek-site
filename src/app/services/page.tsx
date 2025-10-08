@@ -319,7 +319,7 @@ export default function ServicesPage() {
               </div>
               
               <a 
-                href="/contact" 
+                href="/consultation" 
                 className="inline-block bg-[oklch(0.505_0.213_27.518)] hover:brightness-125 text-white font-bold py-3 px-8 rounded-md text-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 transform-gpu font-montserrat"
               >
                 Schedule a Consultation
