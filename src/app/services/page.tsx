@@ -191,7 +191,8 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side: Content */}
-            <div className="w-full">
+            <div className="w-full flex flex-col lg:block items-center lg:items-start text-center lg:text-left">
+              {/* Badge and Heading */}
               <div className="inline-block bg-[oklch(0.505_0.213_27.518)] text-white rounded-lg px-4 py-2 mb-4 font-montserrat">
                 <svg className="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
@@ -203,49 +204,118 @@ export default function ServicesPage() {
                 The Benefits Of A Consultation
               </h2>
               
-              <div className="text-gray-700 font-montserrat mb-8 space-y-4">
+              {/* Mobile Image - Only visible on mobile */}
+              <div className="block lg:hidden w-full mb-6 max-w-md">
+                <div className="rounded-xl overflow-hidden shadow-lg h-[300px] w-full">
+                  <Image 
+                    src="/images/img-15.jpg"
+                    alt="Consultation benefits"
+                    className="w-full h-full object-cover"
+                    width={800}
+                    height={800}
+                    priority
+                  />
+                </div>
+              </div>
+              
+              {/* Main Content */}
+              <div className="text-gray-700 font-montserrat mb-8 space-y-4 max-w-md lg:max-w-none">
                 <p>
                   <span className="font-bold text-gray-900">Maple Creek Home Health & Hospice</span> is the perfect in-home solution for those who want to maintain their independence and dignity by continuing to live in the comfort of their own homes. Let our highly experienced Personal Care Attendants / Caregivers make your life easier with a personal plan of care that ensures a peaceful and satisfying in-home care experience.
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                <div className="flex items-center space-x-2">
-                  <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                  </svg>
-                  <span className="text-gray-700">Learn About Our Services</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                  </svg>
-                  <span className="text-gray-700">Have Clarity Going Forward</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                  </svg>
-                  <span className="text-gray-700">Speak With A Real Person</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                  </svg>
-                  <span className="text-gray-700">Gain Peace Of Mind</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                  </svg>
-                  <span className="text-gray-700">Explain Your Unique Situation</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                  </svg>
-                  <span className="text-gray-700">Talk To Someone Who Cares</span>
-                </div>
+              {/* Benefits List - Single column on mobile/tablet, two columns on desktop */}
+              <div className="mb-8 w-full max-w-lg lg:max-w-none mx-auto lg:mx-0">
+                {/* Single table for perfect alignment */}
+                <table className="w-full border-separate border-spacing-0">
+                  <tbody>
+                    <tr>
+                      <td className="w-10 py-2 text-center lg:text-left align-top">
+                        <div className="inline-flex items-center justify-center w-7 h-7">
+                          <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </td>
+                      <td className="py-2 text-gray-700 text-center lg:text-left align-top">Learn About Our Services</td>
+                      <td className="hidden lg:table-cell w-10 py-2 text-left align-top">
+                        <div className="inline-flex items-center justify-center w-7 h-7">
+                          <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </td>
+                      <td className="hidden lg:table-cell py-2 text-gray-700 text-left align-top">Gain Peace Of Mind</td>
+                    </tr>
+                    <tr>
+                      <td className="w-10 py-2 text-center lg:text-left align-top">
+                        <div className="inline-flex items-center justify-center w-7 h-7">
+                          <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </td>
+                      <td className="py-2 text-gray-700 text-center lg:text-left align-top">Have Clarity Going Forward</td>
+                      <td className="hidden lg:table-cell w-10 py-2 text-left align-top">
+                        <div className="inline-flex items-center justify-center w-7 h-7">
+                          <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </td>
+                      <td className="hidden lg:table-cell py-2 text-gray-700 text-left align-top">Explain Your Unique Situation</td>
+                    </tr>
+                    <tr>
+                      <td className="w-10 py-2 text-center lg:text-left align-top">
+                        <div className="inline-flex items-center justify-center w-7 h-7">
+                          <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </td>
+                      <td className="py-2 text-gray-700 text-center lg:text-left align-top">Speak With A Real Person</td>
+                      <td className="hidden lg:table-cell w-10 py-2 text-left align-top">
+                        <div className="inline-flex items-center justify-center w-7 h-7">
+                          <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </td>
+                      <td className="hidden lg:table-cell py-2 text-gray-700 text-left align-top">Talk To Someone Who Cares</td>
+                    </tr>
+                    <tr className="lg:hidden">
+                      <td className="w-10 py-2 text-center align-top">
+                        <div className="inline-flex items-center justify-center w-7 h-7">
+                          <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </td>
+                      <td className="py-2 text-gray-700 text-center align-top">Gain Peace Of Mind</td>
+                    </tr>
+                    <tr className="lg:hidden">
+                      <td className="w-10 py-2 text-center align-top">
+                        <div className="inline-flex items-center justify-center w-7 h-7">
+                          <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </td>
+                      <td className="py-2 text-gray-700 text-center align-top">Explain Your Unique Situation</td>
+                    </tr>
+                    <tr className="lg:hidden">
+                      <td className="w-10 py-2 text-center align-top">
+                        <div className="inline-flex items-center justify-center w-7 h-7">
+                          <svg className="w-5 h-5 text-[oklch(0.505_0.213_27.518)]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                          </svg>
+                        </div>
+                      </td>
+                      <td className="py-2 text-gray-700 text-center align-top">Talk To Someone Who Cares</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
               
               <a 
@@ -259,8 +329,8 @@ export default function ServicesPage() {
               </a>
             </div>
             
-            {/* Right side: Image */}
-            <div className="w-full flex items-center justify-center px-4 py-6 lg:py-12">
+            {/* Right side: Image - Only visible on desktop */}
+            <div className="hidden lg:flex w-full items-center justify-center px-4 py-6 lg:py-12">
               <div className="rounded-xl overflow-hidden shadow-lg h-[400px] w-[90%]">
                 <Image 
                   src="/images/img-15.jpg"
