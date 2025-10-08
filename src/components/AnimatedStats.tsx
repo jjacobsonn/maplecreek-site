@@ -10,9 +10,9 @@ const AnimatedStats = () => {
   });
 
   return (
-    <section ref={ref} className="w-full py-16 bg-[#f4f4f4]">
+    <section ref={ref} className="w-full py-16 bg-white">
       <div className="w-full px-4 sm:px-8">
-        <div className="max-w-screen-xl mx-auto bg-white rounded-3xl p-4 sm:p-6 md:p-8 shadow-lg">
+  <div className="max-w-screen-xl mx-auto bg-[#f4f4f4] rounded-3xl p-4 sm:p-6 md:p-8 shadow-lg">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
             {/* 4.8 Stars */}
             <div className="flex flex-col items-center justify-center">

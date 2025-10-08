@@ -12,6 +12,27 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Custom xs breakpoint utility classes */
+@media (min-width: 475px) {
+  .xs\:text-sm {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+  
+  .xs\:text-base {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+  }
+  
+  .xs\:inline {
+    display: inline;
+  }
+  
+  .xs\:hidden {
+    display: none;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

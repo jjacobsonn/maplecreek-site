@@ -8,21 +8,33 @@ import { usePathname } from 'next/navigation';
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  
+  // Function to close the mobile menu
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
   return (
     <>
       {/* Top red bar with phone info */}
       <div className="fixed top-0 left-0 w-full z-50 bg-red-700 py-2 flex justify-center items-center">
-        <span className="text-white text-lg font-extrabold flex items-center gap-2 font-montserrat">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5" fill="white">
+        <div className="text-white text-sm sm:text-lg font-extrabold flex items-center gap-1 sm:gap-2 font-montserrat">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4 h-4 sm:w-5 sm:h-5" fill="white">
             <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.25a1 1 0 01-1 1C10.07 22 2 13.93 2 4.75a1 1 0 011-1H6.25a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" />
           </svg>
-          Give Us A Call: 801-798-5333
-        </span>
+          <span className="text-xs xs:text-sm sm:text-lg">Give Us A Call: </span>
+          <a 
+            href="tel:8017985333" 
+            className="text-xs xs:text-sm sm:text-lg text-white hover:text-yellow-200 transition-colors underline decoration-dotted decoration-1 underline-offset-2"
+            aria-label="Call 801-798-5333"
+          >
+            801-798-5333
+          </a>
+        </div>
       </div>
       <nav className="bg-white shadow-md">
         <div className="h-10" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
           <div className="flex justify-between h-28">
             {/* Logo section */}
             <div className="flex-shrink-0 flex items-center px-0">
@@ -32,7 +44,7 @@ const Navigation = () => {
                   alt="Maple Creek Home Health & Hospice"
                   width={400}
                   height={110}
-                  className="self-center max-h-24 object-contain"
+                  className="self-center max-h-16 sm:max-h-20 md:max-h-24 object-contain"
                   priority
                 />
               </Link>
@@ -79,10 +91,12 @@ const Navigation = () => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="lg:hidden flex items-center">
+            <div className="lg:hidden flex items-center absolute right-4 top-16">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-900 hover:bg-gray-100 focus:outline-none"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-900 hover:bg-gray-100 focus:outline-none bg-white shadow-sm"
+                aria-expanded={isOpen}
+                aria-label="Toggle navigation"
               >
                 <span className="sr-only">Open main menu</span>
                 <svg
@@ -113,36 +127,42 @@ const Navigation = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               href="/"
+              onClick={closeMenu}
               className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/' ? 'text-red-700' : ''}`}
             >
               Home
             </Link>
             <Link
               href="/about"
+              onClick={closeMenu}
               className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/about' ? 'text-red-700' : ''}`}
             >
               About
             </Link>
             <Link
               href="/services"
+              onClick={closeMenu}
               className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/services' ? 'text-red-700' : ''}`}
             >
               Services
             </Link>
             <Link
               href="/careers"
+              onClick={closeMenu}
               className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/careers' ? 'text-red-700' : ''}`}
             >
               Careers
             </Link>
             <Link
               href="/resources"
+              onClick={closeMenu}
               className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/resources' ? 'text-red-700' : ''}`}
             >
               Resources
             </Link>
             <Link
               href="/contact"
+              onClick={closeMenu}
               className={`block px-3 py-2 font-montserrat text-gray-700 font-bold rounded hover:text-red-700 hover:bg-gray-100 hover:underline ${pathname === '/contact' ? 'text-red-700' : ''}`}
             >
               Contact
