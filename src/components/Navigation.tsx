@@ -18,12 +18,19 @@ const Navigation = () => {
     <>
       {/* Top red bar with phone info */}
       <div className="fixed top-0 left-0 w-full z-50 bg-red-700 py-2 flex justify-center items-center">
-        <span className="text-white text-sm sm:text-lg font-extrabold flex items-center gap-1 sm:gap-2 font-montserrat">
+        <div className="text-white text-sm sm:text-lg font-extrabold flex items-center gap-1 sm:gap-2 font-montserrat">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4 h-4 sm:w-5 sm:h-5" fill="white">
             <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.25a1 1 0 01-1 1C10.07 22 2 13.93 2 4.75a1 1 0 011-1H6.25a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" />
           </svg>
-          <span className="text-xs xs:text-sm sm:text-lg">Give Us A Call: 801-798-5333</span>
-        </span>
+          <span className="text-xs xs:text-sm sm:text-lg">Give Us A Call: </span>
+          <a 
+            href="tel:8017985333" 
+            className="text-xs xs:text-sm sm:text-lg text-white hover:text-yellow-200 transition-colors underline decoration-dotted decoration-1 underline-offset-2"
+            aria-label="Call 801-798-5333"
+          >
+            801-798-5333
+          </a>
+        </div>
       </div>
       <nav className="bg-white shadow-md">
         <div className="h-10" />
